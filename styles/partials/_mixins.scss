@@ -1,0 +1,25 @@
+// FONT STYLES //
+@mixin heading-text($size) {
+   font-family: $headingfont;
+   font-size: $size * 1px;
+   font-size: ($size/10) * 1rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: $text-color;
+}
+
+@mixin body-text($size) {
+   font-family: $basefont;
+   font-size: $size * 1px;
+   font-size: ($size/10) * 1rem;
+   line-height: 32px;
+   color: $text-color;
+}
+
+@mixin button($width) {
+   width: $width;
+   background: $button-color;
+   font-family: $headingfont;
+   line-height: 32px;
+   text-align: center;
+}
