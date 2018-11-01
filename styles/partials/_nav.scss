@@ -1,0 +1,23 @@
+.nav {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+   background: $brand-color-primary;
+   &__list-item:nth-child(2),
+   &__list-item:nth-child(3) {
+      order: -1;
+   }
+   &__link {
+      @include heading-text(20);
+      padding: 0 30px;
+      line-height: 29px;
+      &:hover:not(.nav__link--logo) {
+         color: $accent;
+      }
+   }
+   &__link--logo {
+      @include heading-text(42);
+   }
+}

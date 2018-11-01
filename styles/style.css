@@ -167,3 +167,39 @@ body {
   max-width: 1280px;
   width: 80%;
   margin: 0 auto; }
+
+.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px;
+  background: #b9dde7; }
+  .nav__list-item:nth-child(2), .nav__list-item:nth-child(3) {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1; }
+  .nav__link {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #171717;
+    padding: 0 30px;
+    line-height: 29px; }
+    .nav__link:hover:not(.nav__link--logo) {
+      color: #f6f6f6; }
+  .nav__link--logo {
+    font-family: "Oswald", sans-serif;
+    font-size: 42px;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #171717; }
