@@ -207,24 +207,48 @@ body {
 .header-home {
   height: 80vh;
   background: #b9dde7; }
-  .header-home .wrapper {
+  .header-home__wrapper--flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-height: 80vh;
     border: 2px solid blue; }
-  .header-home__img {
-    width: 50%;
+  .header-home__img-container {
     line-height: 0; }
-  .header-home__h1 {
-    position: relative;
-    border: 2px solid red; }
-  .header-home__h1--circle-text {
-    position: absolute;
-    right: 0; }
+    .header-home__img-container--img {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      -webkit-box-shadow: 15px 15px 0 #f6f6f6;
+      box-shadow: 15px 15px 0 #f6f6f6; }
+  .header-home__h1-container {
+    border: 5px solid limegreen;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    padding-left: 100px; }
   .header-home__h1--main {
     font-family: "Oswald", sans-serif;
-    font-size: 120px;
-    font-size: 12rem;
+    font-size: 130px;
+    font-size: 13rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #171717; }
+    color: #171717;
+    text-align: center; }
+  .header-home__h1--circle-text {
+    position: relative;
+    right: 95px;
+    top: -40px;
+    max-width: 140px;
+    -webkit-transform: rotate(-37deg);
+    -ms-transform: rotate(-37deg);
+    transform: rotate(-37deg); }

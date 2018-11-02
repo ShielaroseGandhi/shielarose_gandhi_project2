@@ -1,23 +1,43 @@
 .header-home {
    height: 80vh;
    background: $brand-color-primary;
-   .wrapper {
+   &__wrapper--flex {
       display: flex;
+      max-height: 80vh;
       border: 2px solid blue;
    }
-   &__img {
-      width: 50%;
+   &__img-container {
+      // border: 2px solid black;
       line-height: 0;
+      &--img {
+         flex: 1 0 auto;
+         box-shadow: 15px 15px 0 $accent;
+      }
    }
-   &__h1 {
-      position: relative;
-      border: 2px solid red;
-   }
-   &__h1--circle-text {
-      position: absolute;
-      right: 0;
+   &__h1-container {
+      border: 5px solid limegreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1 0 auto;
+      padding-left: 100px;
    }
    &__h1--main {
-      @include heading-text(120);
+      @include heading-text(130);
+      // border: 3px solid red;
+      // margin: auto;
+      text-align: center;
+      // position: relative;
+   }
+   &__h1--circle-text {
+      // border: 2px solid green;
+      position: relative;
+      right: 95px;
+      top: -40px;
+      max-width: 140px;
+      transform: rotate(-37deg);
+   }
+   &__h1--img {
+      // width: 90%;
    }
 }
