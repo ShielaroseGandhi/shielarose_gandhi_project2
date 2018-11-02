@@ -5,8 +5,8 @@
    align-items: center;
    padding: 15px;
    background: $brand-color-primary;
-   &__list-item:nth-child(2),
-   &__list-item:nth-child(3) {
+   &__list-item:nth-of-type(2),
+   &__list-item:nth-of-type(3) {
       order: -1;
    }
    &__link {

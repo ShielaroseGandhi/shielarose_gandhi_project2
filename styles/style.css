@@ -181,7 +181,7 @@ body {
   align-items: center;
   padding: 15px;
   background: #b9dde7; }
-  .nav__list-item:nth-child(2), .nav__list-item:nth-child(3) {
+  .nav__list-item:nth-of-type(2), .nav__list-item:nth-of-type(3) {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1; }
@@ -200,6 +200,31 @@ body {
     font-family: "Oswald", sans-serif;
     font-size: 42px;
     font-size: 4.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #171717; }
+
+.header-home {
+  height: 80vh;
+  background: #b9dde7; }
+  .header-home .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 2px solid blue; }
+  .header-home__img {
+    width: 50%;
+    line-height: 0; }
+  .header-home__h1 {
+    position: relative;
+    border: 2px solid red; }
+  .header-home__h1--circle-text {
+    position: absolute;
+    right: 0; }
+  .header-home__h1--main {
+    font-family: "Oswald", sans-serif;
+    font-size: 120px;
+    font-size: 12rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #171717; }

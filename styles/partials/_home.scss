@@ -1,0 +1,23 @@
+.header-home {
+   height: 80vh;
+   background: $brand-color-primary;
+   .wrapper {
+      display: flex;
+      border: 2px solid blue;
+   }
+   &__img {
+      width: 50%;
+      line-height: 0;
+   }
+   &__h1 {
+      position: relative;
+      border: 2px solid red;
+   }
+   &__h1--circle-text {
+      position: absolute;
+      right: 0;
+   }
+   &__h1--main {
+      @include heading-text(120);
+   }
+}
