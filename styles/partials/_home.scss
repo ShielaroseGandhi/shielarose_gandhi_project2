@@ -20,12 +20,11 @@
       flex: 1 0 auto;
       justify-content: center;
       align-items: center;
-      padding-left: 40px;
       height: 100%;
    }
    &__h1--main {
       @include heading-text(130);
-      text-align: center;
+      text-align: left;
       flex: 1 0 auto;
    }
    &__h1--circle-text {
@@ -41,8 +40,8 @@
 .whos-harper {
    background: $accent;
    &__container {
-      padding: 100px;
-      width: 60%;
+      padding: 100px 0;
+      width: 55%;
       margin-left: auto;
    }
    &__h2 {

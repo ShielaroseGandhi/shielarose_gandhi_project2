@@ -178,7 +178,12 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
-  color: #171717; }
+  color: #171717;
+  -webkit-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s; }
+  .button:hover {
+    background: #f27676; }
 
 .nav {
   max-width: 100%;
@@ -249,7 +254,6 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 40px;
     height: 100%; }
   .header-home__h1--main {
     font-family: "Oswald", sans-serif;
@@ -258,7 +262,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #171717;
-    text-align: center;
+    text-align: left;
     -webkit-box-flex: 1;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto; }
@@ -274,8 +278,8 @@ body {
 .whos-harper {
   background: #f6f6f6; }
   .whos-harper__container {
-    padding: 100px;
-    width: 60%;
+    padding: 100px 0;
+    width: 55%;
     margin-left: auto; }
   .whos-harper__h2 {
     font-family: "Oswald", sans-serif;

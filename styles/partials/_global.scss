@@ -15,4 +15,8 @@ body {
 
 .button {
    @include button(100%);
+   transition: background 0.1s;
+   &:hover {
+      background: darken($button-color, 5);
+   }
 }
