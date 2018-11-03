@@ -166,10 +166,10 @@ body {
 .wrapper {
   max-width: 1280px;
   width: 80%;
-  margin: 0 auto;
-  border: 2px solid red; }
+  margin: 0 auto; }
 
 .button {
+  display: inline-block;
   width: 100%;
   background: #f48d8d;
   padding: 10px 35px;
@@ -289,6 +289,17 @@ body {
     line-height: 32px;
     color: #171717;
     margin-bottom: 50px; }
+  .whos-harper__button {
+    display: inline-block;
+    width: 235px;
+    background: #f48d8d;
+    padding: 10px 35px;
+    font-family: "Oswald", sans-serif;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #171717; }
   .whos-harper__img {
     width: 100%;
     display: block; }
@@ -331,3 +342,69 @@ body {
       line-height: 32px;
       color: #171717;
       margin-bottom: 80px; }
+
+.blog__post--top {
+  position: relative;
+  top: -50px; }
+
+.blog__post--row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  position: relative;
+  bottom: -50px; }
+
+.blog__post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .blog__post__content {
+    width: 50%; }
+  .blog__post--h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #171717;
+    margin-top: 0; }
+  .blog__post--description {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 32px;
+    color: #171717;
+    margin-bottom: 35px; }
+  .blog__post--button {
+    display: inline-block;
+    width: 180px;
+    background: #f48d8d;
+    padding: 10px 35px;
+    font-family: "Oswald", sans-serif;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #171717; }
+  .blog__post--travels {
+    padding-left: 100px;
+    margin-top: auto;
+    margin-bottom: -20px; }
+  .blog__post--favourite-things {
+    padding-right: 100px;
+    text-align: right;
+    margin-bottom: auto; }
+  .blog__post--left-align {
+    text-align: left; }
+
+.blog__img-container {
+  width: 50%; }
+  .blog__img-container--img {
+    display: block; }
+  .blog__img-container--img-top {
+    -webkit-box-shadow: 20px 20px 0 #68b0c1, -300px 20px 0 #68b0c1;
+    box-shadow: 20px 20px 0 #68b0c1, -300px 20px 0 #68b0c1; }
+  .blog__img-container--img-bottom {
+    -webkit-box-shadow: 20px 20px 0 #b9dde7, 300px 20px 0 #b9dde7;
+    box-shadow: 20px 20px 0 #b9dde7, 300px 20px 0 #b9dde7; }

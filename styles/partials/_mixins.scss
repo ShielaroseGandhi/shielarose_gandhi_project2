@@ -17,7 +17,7 @@
 }
 
 @mixin button($width) {
-   // display: inline-block;
+   display: inline-block;
    width: $width;
    background: $button-color;
    padding: 10px 35px;

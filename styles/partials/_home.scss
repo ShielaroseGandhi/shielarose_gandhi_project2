@@ -56,6 +56,9 @@
       @include body-text(20);
       margin-bottom: 50px;
    }
+   &__button {
+      @include button(235px);
+   }
    &__img {
       width: 100%;
       display: block;
@@ -93,6 +96,61 @@
       &--description {
          @include body-text(20);
          margin-bottom: 80px;
+      }
+   }
+}
+
+// BLOG //
+.blog {
+   &__post--top {
+      position: relative;
+      top: -50px;
+   }
+   &__post--row-reverse {
+      flex-direction: row-reverse;
+      position: relative;
+      bottom: -50px;
+   }
+   &__post {
+      display: flex;
+      &__content {
+         width: 50%;
+      }
+      &--h3 {
+         @include heading-text(32);
+         margin-top: 0;
+      }
+      &--description {
+         @include body-text(20);
+         margin-bottom: 35px;
+      }
+      &--button {
+         @include button(180px);
+      }
+      &--travels {
+         padding-left: 100px;
+         margin-top: auto;
+         margin-bottom: -20px;
+      }
+      &--favourite-things {
+         padding-right: 100px;
+         text-align: right;
+         margin-bottom: auto;
+      }
+      &--left-align {
+         text-align: left;
+      }
+   }
+   &__img-container {
+      width: 50%;
+      &--img {
+         display: block;
+      }
+      &--img-top {
+         box-shadow: 20px 20px 0 $brand-color-tertiary, -300px 20px 0 $brand-color-tertiary; 
+      }
+      &--img-bottom {
+         box-shadow: 20px 20px 0 $brand-color-primary, 300px 20px 0 $brand-color-primary;
       }
    }
 }
