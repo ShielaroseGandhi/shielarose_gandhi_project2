@@ -17,9 +17,14 @@
 }
 
 @mixin button($width) {
+   // display: inline-block;
    width: $width;
    background: $button-color;
+   padding: 10px 35px;
    font-family: $headingfont;
    line-height: 32px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
    text-align: center;
+   color: $text-color;
 }
