@@ -1,38 +1,43 @@
 // HEADER //
 .header-home {
-   // height: 80vh;
    background: $brand-color-primary;
    &__wrapper--flex {
       display: flex;
       align-items: center;
+      justify-content: space-between;
    }
    &__img-container {
-      line-height: 0;
-      flex: 1 1 auto;
+      flex: 1 2 500px;
       position: relative;
       bottom: -45px;
+      max-width: 500px;
       &--img {
+         display: block;
+         width: 100%;
          box-shadow: 15px 15px 0 white;
       }
    }
    &__h1-container {
       display: flex;
-      flex: 1 0 auto;
-      justify-content: center;
+      flex: 1 1 auto;
       align-items: center;
-      height: 100%;
+      max-width: 55%;
    }
    &__h1--main {
-      @include heading-text(130);
-      text-align: left;
-      flex: 1 0 auto;
+      @include heading-text(150);
+      position: relative;
+      // &::before {
+      //    content: url('../assets/circle-text.png');
+      //    position: absolute;
+      //    top: -25px;
+      //    right: -50px;
+      // }
    }
    &__h1--circle-text {
-      position: relative;
-      right: 130px;
-      top: -40px;
-      max-width: 140px;
-      flex: 1 0 auto;
+      position: absolute;
+      right: -50px;
+      top: -25px;
+      // max-width: 140px;
    }
 }
 

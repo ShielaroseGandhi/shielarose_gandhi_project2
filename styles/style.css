@@ -166,7 +166,8 @@ body {
 .wrapper {
   max-width: 1280px;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 2px solid red; }
 
 .button {
   width: 100%;
@@ -228,15 +229,20 @@ body {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .header-home__img-container {
-    line-height: 0;
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -ms-flex: 1 2 500px;
+    flex: 1 2 500px;
     position: relative;
-    bottom: -45px; }
+    bottom: -45px;
+    max-width: 500px; }
     .header-home__img-container--img {
+      display: block;
+      width: 100%;
       -webkit-box-shadow: 15px 15px 0 white;
       box-shadow: 15px 15px 0 white; }
   .header-home__h1-container {
@@ -244,34 +250,24 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 100%; }
+    max-width: 55%; }
   .header-home__h1--main {
     font-family: "Oswald", sans-serif;
-    font-size: 130px;
-    font-size: 13rem;
+    font-size: 150px;
+    font-size: 15rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #171717;
-    text-align: left;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto; }
+    position: relative; }
   .header-home__h1--circle-text {
-    position: relative;
-    right: 130px;
-    top: -40px;
-    max-width: 140px;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto; }
+    position: absolute;
+    right: -50px;
+    top: -25px; }
 
 .whos-harper {
   background: #f6f6f6; }
