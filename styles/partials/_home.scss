@@ -1,43 +1,38 @@
 .header-home {
-   height: 80vh;
+   height: 750px;
    background: $brand-color-primary;
    &__wrapper--flex {
       display: flex;
-      max-height: 80vh;
-      border: 2px solid blue;
+      align-items: center;
+      padding-top: 50px;
    }
    &__img-container {
-      // border: 2px solid black;
       line-height: 0;
+      flex: 1 1 auto;
+      position: relative;
+      bottom: -25px;
       &--img {
-         flex: 1 0 auto;
          box-shadow: 15px 15px 0 $accent;
       }
    }
    &__h1-container {
-      border: 5px solid limegreen;
       display: flex;
+      flex: 1 0 auto;
       justify-content: center;
       align-items: center;
-      flex: 1 0 auto;
-      padding-left: 100px;
+      padding-left: 40px;
+      height: 100%;
    }
    &__h1--main {
       @include heading-text(130);
-      // border: 3px solid red;
-      // margin: auto;
       text-align: center;
-      // position: relative;
+      flex: 1 0 auto;
    }
    &__h1--circle-text {
-      // border: 2px solid green;
       position: relative;
-      right: 95px;
+      right: 130px;
       top: -40px;
       max-width: 140px;
-      transform: rotate(-37deg);
-   }
-   &__h1--img {
-      // width: 90%;
+      flex: 1 0 auto;
    }
 }

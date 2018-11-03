@@ -169,7 +169,7 @@ body {
   margin: 0 auto; }
 
 .nav {
-  width: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 15px;
+  padding: 20px 20px 20px 0;
   background: #b9dde7; }
   .nav__list-item:nth-of-type(2), .nav__list-item:nth-of-type(3) {
     -webkit-box-ordinal-group: 0;
@@ -205,37 +205,41 @@ body {
     color: #171717; }
 
 .header-home {
-  height: 80vh;
+  height: 750px;
   background: #b9dde7; }
   .header-home__wrapper--flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-height: 80vh;
-    border: 2px solid blue; }
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 50px; }
   .header-home__img-container {
-    line-height: 0; }
+    line-height: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    position: relative;
+    bottom: -25px; }
     .header-home__img-container--img {
-      -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-      flex: 1 0 auto;
       -webkit-box-shadow: 15px 15px 0 #f6f6f6;
       box-shadow: 15px 15px 0 #f6f6f6; }
   .header-home__h1-container {
-    border: 5px solid limegreen;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    padding-left: 100px; }
+    padding-left: 40px;
+    height: 100%; }
   .header-home__h1--main {
     font-family: "Oswald", sans-serif;
     font-size: 130px;
@@ -243,12 +247,15 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #171717;
-    text-align: center; }
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; }
   .header-home__h1--circle-text {
     position: relative;
-    right: 95px;
+    right: 130px;
     top: -40px;
     max-width: 140px;
-    -webkit-transform: rotate(-37deg);
-    -ms-transform: rotate(-37deg);
-    transform: rotate(-37deg); }
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; }
