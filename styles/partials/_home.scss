@@ -1,6 +1,6 @@
 // HEADER //
 .header-home {
-   height: 750px;
+   // height: 80vh;
    background: $brand-color-primary;
    &__wrapper--flex {
       display: flex;
@@ -76,7 +76,7 @@
          color: $brand-color-primary;
       }
       &--main {
-         font-size: 28px;
+         font-size: 25px;
       }
    }
    &__main-content {
@@ -91,4 +91,6 @@
       }
    }
 }
+
+
 

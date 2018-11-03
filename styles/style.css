@@ -166,8 +166,7 @@ body {
 .wrapper {
   max-width: 1280px;
   width: 80%;
-  margin: 0 auto;
-  border: 2px solid red; }
+  margin: 0 auto; }
 
 .button {
   width: 100%;
@@ -222,7 +221,6 @@ body {
     color: #171717; }
 
 .header-home {
-  height: 750px;
   background: #b9dde7; }
   .header-home__wrapper--flex {
     display: -webkit-box;
@@ -319,7 +317,7 @@ body {
     .pages__icons--circle {
       color: #b9dde7; }
     .pages__icons--main {
-      font-size: 28px; }
+      font-size: 25px; }
   .pages__main-content {
     padding: 0 15px 0 25px; }
     .pages__main-content--h3 {
