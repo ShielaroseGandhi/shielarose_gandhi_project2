@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* GENERAL STYLING */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -181,7 +182,8 @@ body {
   color: #171717;
   -webkit-transition: background 0.1s;
   -o-transition: background 0.1s;
-  transition: background 0.1s; }
+  transition: background 0.1s;
+  border: none; }
   .button:hover {
     background: #f27676; }
 
@@ -508,6 +510,16 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+  .blog__bg {
+    background: white; }
+  .blog__body-text {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 32px;
+    color: #171717; }
+  .blog--padding {
+    padding: 40px; }
   .blog__aside {
     width: 30%; }
     .blog__aside--h3 {
@@ -526,9 +538,10 @@ body {
     .blog__aside--img {
       width: 100%; }
     .blog__aside--list-item {
-      margin-left: 40px;
-      padding-left: 15px;
-      list-style-type: disc; }
+      margin-left: 15px; }
+    .blog__aside--list-item:before {
+      content: "•";
+      padding-right: 25px; }
   .blog__main {
     width: 66%; }
     .blog__main--h2 {
@@ -560,13 +573,29 @@ body {
       margin: 0; }
     .blog__main--border {
       border-bottom: 10px solid #227284; }
-  .blog__bg {
-    background: white; }
-  .blog__body-text {
-    font-family: "Cabin", sans-serif;
-    font-size: 20px;
-    font-size: 2rem;
-    line-height: 32px;
-    color: #171717; }
-  .blog--padding {
-    padding: 40px; }
+  .blog__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .blog__input {
+    border: none;
+    padding: 25px 35px; }
+  .blog__input--half {
+    width: 49%; }
+  .blog__input--comment {
+    width: 100%;
+    margin: 2% 0;
+    resize: none; }
+  .blog ::-webkit-input-placeholder {
+    opacity: 1; }
+  .blog :-ms-input-placeholder {
+    opacity: 1; }
+  .blog ::-ms-input-placeholder {
+    opacity: 1; }
+  .blog ::placeholder {
+    opacity: 1; }

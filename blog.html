@@ -38,7 +38,7 @@
    </header>
    <!-- HEADER END -->
 
-   <!-- MAIN BLOG SECTION -->
+   <!-- MAIN SECTION - ASIDE + BLOG -->
    <main class="blog">
       <div class="wrapper">
          <aside class="blog__aside">
@@ -90,15 +90,16 @@
             </div>
             <form action="" class="blog__form">
                <label for="name" class="visuallyhidden">Enter Name</label>
-               <input type="text" id="name" placeholder="Name" class="blog__input blog__input--name">
+               <input type="text" id="name" placeholder="Name" class="blog__input blog__input--name blog__input--half blog__body-text">
 
                <label for="email" class="visuallyhidden">Enter Email Address</label>
-               <input type="email" id="email" placeholder="Email" class="blog__input blog__input--email">
+               <input type="email" id="email" placeholder="Email" class="blog__input blog__input--email blog__input--half blog__body-text">
 
-               <label for="comment" class="visuallyhidden">Enter Comment</label>
-               <input type="text" id="comment" placeholder="Comment" class="blog__input blog__input--comment">
+               <textarea name="comment" id="comment" class="blog__input blog__input--comment blog__body-text" cols="30" rows="10" wrap="hard" placeholder="Comment"></textarea> 
 
-               <a href="#" class="button blog__button">Post Comment</a>
+               <label for="submit" class="visuallyhidden"></label>
+               <input type="submit" id="submit" class="button blog__button" value="Post Comment">
+
             </form>
          </section>
       </div>
