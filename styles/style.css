@@ -183,7 +183,9 @@ body {
   transition: background 0.1s;
   border: none; }
   .button:hover {
-    background: #f27676; }
+    background: #f27676;
+    -webkit-box-shadow: 1px 1px 5px #171717;
+    box-shadow: 1px 1px 5px #171717; }
 
 .hero-heading {
   font-family: "Oswald", sans-serif;

@@ -18,6 +18,7 @@ body {
    border: none;
    &:hover {
       background: darken($button-color, 5);
+      box-shadow: 1px 1px 5px $text-color;
    }
 }
 
