@@ -513,7 +513,16 @@ body {
     justify-content: space-between; }
   .gallery__container {
     line-height: 0;
-    width: 31%; }
+    width: 31%;
+    -webkit-transition: -webkit-transform 0.35s ease;
+    transition: -webkit-transform 0.35s ease;
+    -o-transition: transform 0.35s ease;
+    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, -webkit-transform 0.35s ease; }
+    .gallery__container:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
 
 .blog-hero {
   background-image: url("../assets/blog-image-1.jpg");

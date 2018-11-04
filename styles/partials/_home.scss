@@ -200,6 +200,10 @@
    &__container {
       line-height: 0;
       width: 31%;
+      transition: transform 0.35s ease;
+      &:hover {
+         transform: scale(1.1);
+      }
    }
 }
 
