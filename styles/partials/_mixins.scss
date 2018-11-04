@@ -28,3 +28,13 @@
    text-align: center;
    color: $text-color;
 }
+
+@mixin bgimage($bgimage) {
+   background-image: url('../assets/#{$bgimage}.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}

@@ -359,13 +359,13 @@ body {
       color: #171717;
       margin-bottom: 80px; }
 
-.blog__post {
+.home-blog__post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .blog__post__content {
+  .home-blog__post__content {
     width: 50%; }
-  .blog__post--h3 {
+  .home-blog__post--h3 {
     font-family: "Oswald", sans-serif;
     font-size: 32px;
     font-size: 3.2rem;
@@ -373,14 +373,14 @@ body {
     letter-spacing: 1px;
     color: #171717;
     margin-top: 0; }
-  .blog__post--description {
+  .home-blog__post--description {
     font-family: "Cabin", sans-serif;
     font-size: 20px;
     font-size: 2rem;
     line-height: 32px;
     color: #171717;
     margin-bottom: 35px; }
-  .blog__post--button {
+  .home-blog__post--button {
     display: inline-block;
     width: 180px;
     background: #f48d8d;
@@ -391,22 +391,22 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #171717; }
-  .blog__post--travels {
+  .home-blog__post--travels {
     padding-left: 100px;
     margin-top: auto;
     margin-bottom: -20px; }
-  .blog__post--favourite-things {
+  .home-blog__post--favourite-things {
     padding-right: 100px;
     text-align: right;
     margin-bottom: auto; }
-  .blog__post--left-align {
+  .home-blog__post--left-align {
     text-align: left; }
 
-.blog__post--top {
+.home-blog__post--top {
   position: relative;
   top: -50px; }
 
-.blog__post--row-reverse {
+.home-blog__post--row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
@@ -415,14 +415,14 @@ body {
   bottom: -35px;
   margin-top: 25px; }
 
-.blog__img-container {
+.home-blog__img-container {
   width: 50%; }
-  .blog__img-container--img {
+  .home-blog__img-container--img {
     display: block; }
-  .blog__img-container--img-top {
+  .home-blog__img-container--img-top {
     -webkit-box-shadow: 20px 20px 0 #68b0c1, -300px 20px 0 #68b0c1;
     box-shadow: 20px 20px 0 #68b0c1, -300px 20px 0 #68b0c1; }
-  .blog__img-container--img-bottom {
+  .home-blog__img-container--img-bottom {
     -webkit-box-shadow: 20px 20px 0 #b9dde7, 300px 20px 0 #b9dde7;
     box-shadow: 20px 20px 0 #b9dde7, 300px 20px 0 #b9dde7; }
 
@@ -472,3 +472,28 @@ body {
   .gallery__container {
     line-height: 0;
     width: 31%; }
+
+.blog-hero {
+  background-image: url("../assets/blog-image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .blog-hero--heading {
+    font-family: "Oswald", sans-serif;
+    font-size: 80px;
+    font-size: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #171717;
+    position: relative;
+    bottom: -50px; }

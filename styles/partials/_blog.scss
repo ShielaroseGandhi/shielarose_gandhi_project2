@@ -1,0 +1,8 @@
+.blog-hero {
+   @include bgimage(blog-image-1);
+   &--heading {
+      @include heading-text(80);
+      position: relative;
+      bottom: -50px;
+   }
+}
