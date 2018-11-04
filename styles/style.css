@@ -165,7 +165,8 @@ body {
 
 .wrapper {
   max-width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 2px solid red; }
 
 .button {
   display: inline-block;
@@ -194,7 +195,7 @@ body {
   color: #171717;
   position: relative;
   bottom: -50px;
-  margin: 0; }
+  width: 100%; }
 
 .form {
   display: -webkit-box;
