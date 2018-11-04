@@ -41,29 +41,39 @@
 
    <!-- CONTENT STARTS -->
    <main class="contact">
-      <aside class="contact__aside">
-         <div class="contact__social-flex">
-            <i class="fab fa-facebook-f contact__social-icons contact__social-icons--facebook"></i>
-            <i class="fab fa-twitter contact__social-icons contact__social-icons--twitter"></i>
-            <i class="fab fa-linkedin-in contact__social-icons contact__social-icons--linkedin"></i>
-            <i class="fab fa-instagram contact__social-icons contact__social-icons--insta"></i>
-         </div>
-         <a href="mailto:info@email.com" class="contact__email">info@email.com</a>
-         <p class="contact__address">123 - 456 - 7890</p>
-         <p class="contact__address">123 Queen Street West, Unit 10</p>
-         <p class="contact__address">Toronto, ON</p>
-         <p class="contact__address">M5V2D5</p>
-      </aside>
-      <form action="" class="contact__form form">
-         <label for="name" class="visuallyhidden">Enter Name</label>
-         <input type="text" id="name" placeholder="Name" class="input input--half input contact__input contact__input--name contact__body-text">
-         
-         <label for="email" class="visuallyhidden">Enter Email Address</label>
-         <input type="email" id="email" placeholder="Email" class="input input--half contact__input contact__input--email contact__body-text">
-         
-         <textarea name="message" id="message" class="input input--full contact__input contact__input--message contact__body-text" cols="30" rows="10" wrap="hard" placeholder="Message"></textarea>
-         
-         <label for="submit" class="visuallyhidden"></label>
-         <input type="submit" id="submit" class="button contact__button" value="Submit">
-      </form>
+      <div class="wrapper">
+         <aside class="contact__aside">
+            <div class="contact__social-flex">
+               <a href="" class="contact__social-icons--link">
+                  <i class="fab fa-facebook-f contact__social-icons contact__social-icons--facebook"></i>
+               </a>
+               <a href="" class="contact__social-icons--link">
+                  <i class="fab fa-twitter contact__social-icons contact__social-icons--twitter"></i>
+               </a>
+               <a href="" class="contact__social-icons--link">
+                  <i class="fab fa-linkedin-in contact__social-icons contact__social-icons--linkedin"></i>
+               </a>
+               <a href="" class="contact__social-icons--link">
+                  <i class="fab fa-instagram contact__social-icons contact__social-icons--insta"></i>
+               </a>
+            </div>
+            <a href="mailto:info@email.com" class="contact__email">info@email.com</a>
+            <p class="contact__address contact__body-text">123 - 456 - 7890</p>
+            <p class="contact__address contact__body-text">123 Queen Street West, Unit 10</p>
+            <p class="contact__address contact__body-text">Toronto, ON</p>
+            <p class="contact__address contact__body-text">M5V2D5</p>
+         </aside>
+         <form action="" class="contact__form form">
+            <label for="name" class="visuallyhidden">Enter Name</label>
+            <input type="text" id="name" placeholder="Name" class="input input--half input contact__input contact__input--name contact__body-text">
+            
+            <label for="email" class="visuallyhidden">Enter Email Address</label>
+            <input type="email" id="email" placeholder="Email" class="input input--half contact__input contact__input--email contact__body-text">
+            
+            <textarea name="message" id="message" class="input input--full contact__input contact__input--message contact__body-text" cols="30" rows="10" wrap="hard" placeholder="Message"></textarea>
+            
+            <label for="submit" class="visuallyhidden"></label>
+            <input type="submit" id="submit" class="button contact__button" value="Submit">
+         </form>
+      </div>
    </main>

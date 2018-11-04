@@ -3,5 +3,46 @@
 }
 
 .contact {
-   
+   background: $accent;
+   padding: 100px 0;
+   .wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__body-text {
+      @include body-text(20);
+   }
+   &__aside {
+      background: white;
+      padding: 35px;
+      width: 29%;
+      height: 100%;
+   }
+   &__form {
+      width: 68%;
+   }
+   &__social-flex {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 15px;
+      width: 65%;
+      
+   }
+   &__social-icons {
+      font-size: 32px;
+      font-size: 3.2rem;
+      color: $brand-color-secondary;
+      &:hover {
+         color: $brand-color-primary;
+      }
+   }
+   &__email {
+      display: block;
+      @include heading-text(24);
+      text-transform: lowercase;
+      margin: 20px 0;
+   }
+   &__address {
+      margin: 5px 0 0 0;
+   }
 }
