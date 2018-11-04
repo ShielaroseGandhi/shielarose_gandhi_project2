@@ -563,6 +563,16 @@ body {
       margin-bottom: 30px; }
     .blog__aside__about-p {
       margin-bottom: 0; }
+    .blog__aside--link {
+      font-family: "Cabin", sans-serif;
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 32px;
+      color: #171717;
+      color: #227284;
+      font-style: bold; }
+    .blog__aside--link:hover {
+      color: #68b0c1; }
     .blog__aside--img {
       width: 100%; }
     .blog__aside--list-item {

@@ -33,6 +33,14 @@
       &__about-p {
          margin-bottom: 0;
       }
+      &--link {
+         @include body-text(20);
+         color: $brand-color-secondary;
+         font-style: bold;
+      }
+      &--link:hover {
+         color: $brand-color-tertiary;
+      }
       &--img {
          width: 100%;
       }
