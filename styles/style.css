@@ -343,18 +343,6 @@ body {
       color: #171717;
       margin-bottom: 80px; }
 
-.blog__post--top {
-  position: relative;
-  top: -50px; }
-
-.blog__post--row-reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  position: relative;
-  bottom: -50px; }
-
 .blog__post {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,6 +386,19 @@ body {
   .blog__post--left-align {
     text-align: left; }
 
+.blog__post--top {
+  position: relative;
+  top: -50px; }
+
+.blog__post--row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  position: relative;
+  bottom: -35px;
+  margin-top: 25px; }
+
 .blog__img-container {
   width: 50%; }
   .blog__img-container--img {
@@ -408,3 +409,37 @@ body {
   .blog__img-container--img-bottom {
     -webkit-box-shadow: 20px 20px 0 #b9dde7, 300px 20px 0 #b9dde7;
     box-shadow: 20px 20px 0 #b9dde7, 300px 20px 0 #b9dde7; }
+
+.harpers-journey {
+  background: #f6f6f6;
+  padding: 175px 0 100px 0; }
+  .harpers-journey .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .harpers-journey__img-container {
+    width: 25%; }
+  .harpers-journey__img {
+    width: 100%;
+    -webkit-box-shadow: 20px 20px 0 #227284;
+    box-shadow: 20px 20px 0 #227284; }
+  .harpers-journey__content {
+    width: 75%;
+    padding-left: 100px; }
+    .harpers-journey__content--h2 {
+      font-family: "Oswald", sans-serif;
+      font-size: 42px;
+      font-size: 4.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #171717;
+      margin-top: 0; }
+    .harpers-journey__content--description {
+      font-family: "Cabin", sans-serif;
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 32px;
+      color: #171717;
+      margin-bottom: 50px; }
+    .harpers-journey__content--button {
+      width: 235px; }

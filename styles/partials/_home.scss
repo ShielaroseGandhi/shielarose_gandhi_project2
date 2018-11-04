@@ -102,15 +102,6 @@
 
 // BLOG //
 .blog {
-   &__post--top {
-      position: relative;
-      top: -50px;
-   }
-   &__post--row-reverse {
-      flex-direction: row-reverse;
-      position: relative;
-      bottom: -50px;
-   }
    &__post {
       display: flex;
       &__content {
@@ -141,6 +132,16 @@
          text-align: left;
       }
    }
+   &__post--top {
+      position: relative;
+      top: -50px;
+   }
+   &__post--row-reverse {
+      flex-direction: row-reverse;
+      position: relative;
+      bottom: -35px;
+      margin-top: 25px;
+   }
    &__img-container {
       width: 50%;
       &--img {
@@ -155,5 +156,35 @@
    }
 }
 
+// HARPER'S JOURNEY //
+.harpers-journey {
+   background: $accent;
+   padding: 175px 0 100px 0;
+   .wrapper {
+      display: flex;
+   }
+   &__img-container {
+      width: 25%;
+   }
+   &__img {
+      width: 100%;
+      box-shadow: 20px 20px 0 $brand-color-secondary;
+   }
+   &__content {
+      width: 75%;
+      padding-left: 100px;
+      &--h2 {
+         @include heading-text(42);
+         margin-top: 0;
+      }
+      &--description {
+         @include body-text(20);
+         margin-bottom: 50px;
+      }
+      &--button {
+         width: 235px;
+      }
+   }
+}
 
 
