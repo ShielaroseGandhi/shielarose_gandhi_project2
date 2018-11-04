@@ -59,9 +59,12 @@
    &__button {
       @include button(235px);
    }
-   &__img {
+   &__bgimage {
+      background: url(../assets/home-image-2.jpg) no-repeat;
+      background-size: cover;
       width: 100%;
-      display: block;
+      height: 40vh;
+      max-height: 500px;
    }
 }
 

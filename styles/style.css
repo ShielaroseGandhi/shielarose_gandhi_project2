@@ -355,9 +355,12 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #171717; }
-  .whos-harper__img {
+  .whos-harper__bgimage {
+    background: url(../assets/home-image-2.jpg) no-repeat;
+    background-size: cover;
     width: 100%;
-    display: block; }
+    height: 40vh;
+    max-height: 500px; }
 
 .pages {
   background: #f6f6f6;
