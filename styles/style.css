@@ -221,6 +221,22 @@ body {
     letter-spacing: 1px;
     color: #171717; }
 
+.footer {
+  background: #171717;
+  padding: 10px;
+  text-align: center; }
+  .footer__text {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 32px;
+    color: #171717;
+    color: #f6f6f6;
+    margin: 0;
+    letter-spacing: 0.5px; }
+  .footer__link {
+    color: #f6f6f6; }
+
 .header-home {
   background: #b9dde7; }
   .header-home__wrapper--flex {
