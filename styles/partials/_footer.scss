@@ -3,7 +3,6 @@
    padding: 10px;
    text-align: center;
    &__text {
-      @include body-text(20);
       color: $accent;
       margin: 0;
       letter-spacing: 0.5px;

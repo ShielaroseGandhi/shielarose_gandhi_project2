@@ -16,14 +16,10 @@
       order: -1;
    }
    &__link {
-      @include heading-text(20);
       padding: 0 30px;
       line-height: 29px;
       &:hover:not(.nav__link--logo) {
          color: $accent;
       }
-   }
-   &__link--logo {
-      @include heading-text(42);
    }
 }

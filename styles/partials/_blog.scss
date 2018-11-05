@@ -13,18 +13,15 @@
    &__bg {
       background: white;
    }
-   &__body-text {
-      @include body-text(20);
-   }
    &--padding {
       padding: 40px;
    }
    &__aside {
       width: 30%;
-      &--h3 {
-         @include heading-text(24);
+      &--h4 {
+         margin: 20px 0;
       }
-      &__recent-posts--h3 {
+      &__recent-posts--h4 {
          margin-top: 0;
       }
       &__about {
@@ -34,7 +31,6 @@
          margin-bottom: 0;
       }
       &--link {
-         @include body-text(20);
          color: $brand-color-secondary;
          font-style: bold;
       }
@@ -55,7 +51,6 @@
    &__main {
       width: 66%;
       &--h2 {
-         @include heading-text(42);
          margin: 0;
       }
       &--feature {

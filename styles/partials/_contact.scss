@@ -10,9 +10,6 @@
       display: flex;
       justify-content: space-between;
    }
-   &__body-text {
-      @include body-text(20);
-   }
    &__aside {
       background: white;
       padding: 35px;
@@ -39,7 +36,6 @@
    }
    &__email {
       display: block;
-      @include heading-text(24);
       text-transform: lowercase;
       margin: 20px 0;
    }

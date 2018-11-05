@@ -12,14 +12,25 @@ body {
    // border: 2px solid red;
 }
 
-.button {
-   @include button(100%);
-   transition: background 0.1s;
-   border: none;
-   &:hover {
-      background: darken($button-color, 5);
-      box-shadow: 1px 1px 5px $text-color;
-   }
+// TEXT SIZES //
+.nav-text {
+   @include heading-text(20);
+}
+
+.h2-text {
+   @include heading-text(42);
+}
+
+.h3-text {
+   @include heading-text(32);
+}
+
+.h4-text {
+   @include heading-text(24);
+}
+
+.body-text {
+   @include body-text(20);
 }
 
 // HERO HEADING STYLES FOR BLOG AND CONTACT ME PAGES //
@@ -28,6 +39,18 @@ body {
    position: relative;
    bottom: -50px;
    width: 100%;
+}
+
+// BUTTON STYLES //
+
+.button {
+   @include button(100%);
+   transition: background 0.1s;
+   border: none;
+   &:hover {
+      background: darken($button-color, 5);
+      box-shadow: 1px 1px 5px $text-color;
+   }
 }
 
 // GENERAL FORM STYLES //
