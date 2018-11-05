@@ -1,0 +1,32 @@
+@media (max-width: 1360px) {
+   // GENERAL STYLES //
+   .wrapper {
+      max-width: 1100px;
+   }
+
+   // HOME PAGE STYLES //
+   // Header //
+   .header-home {
+      &__img-container {
+         max-width: 400px;
+      }
+      &__h1--main {
+         @include heading-text(120);
+      }
+      &__h1--circle-text {
+         top: -20px;
+         right: -40px;
+         max-width: 150px;
+      }
+   }
+
+   // Blog //
+   .home-blog {
+      padding: 25px 0;
+      &__post--row-reverse {
+         margin-top: 0px;
+      }
+   }
+}
+
+@media (max-width:)
