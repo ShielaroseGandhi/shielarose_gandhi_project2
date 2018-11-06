@@ -156,9 +156,10 @@
       }
    }
 
-   // Who's Harper & Harper's Journey //
+   // Who's Harper & Harper's Journey & Gallery//
    .whos-harper__container,
-   .harpers-journey {
+   .harpers-journey,
+   .gallery {
       padding: 70px 0;
    }
 
@@ -277,5 +278,134 @@
          }
       }
    }
+}
 
+@media (max-width: 768px) {
+   // HOME PAGE STYLES //
+   // Header //
+   .header-home {
+      background: url(../assets/home-image-1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 80vh;
+      &::after {
+         content: "";
+         background: lightgrey;
+         opacity: 0.5;
+         position: absolute;
+         top: 80px;
+         left: 0;
+         height: 80vh;
+         width: 100%;
+      }
+      &__wrapper--flex {
+         flex-direction: column;
+      }
+      &__img-container--img {
+         display: none;
+      }
+      &__h1-container {
+         height: 40vh;
+         z-index: 1;
+      }
+   }
+
+   // Who's Harper //
+   .whos-harper {
+      &__container {
+         margin: 0 auto;
+         text-align: center;
+         width: 80%;
+      }
+   }
+
+   // Pages //
+   .pages {
+      &--flex {
+         align-items: center;
+         justify-content: center;
+      }
+      &__container {
+         width: 80%;
+      }
+   }
+
+   // Blog section //
+   .home-blog {
+      padding: 70px 0;
+      .wrapper {
+         width: 80%;
+      }
+      &__post {
+         position: static;
+         flex-direction: column;
+         align-items: center;
+         &__content {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+         }
+         &--left-align {
+            text-align: center;
+         }
+      }
+      &__img-container {
+         width: 90%;
+         &--img {
+            // box-shadow: none;
+            margin-bottom: 50px;
+         }
+      }
+      &__post--row-reverse {
+         margin-top: 70px;
+      }
+   }
+
+
+   // Harper's Journey //
+   .harpers-journey {
+      .wrapper {
+         flex-direction: column;
+         align-items: center;
+      }
+      &__img-container {
+         width: 50%;
+         margin-bottom: 50px;
+      }
+      &__content {
+         width: 90%;
+         text-align: center;
+         padding: 0;
+      }
+   }
+   
+   // Gallery //
+   .gallery__container {
+      width: 47.5%;
+      &:first-child {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 600px) {
+   // HAMBURGER MENU //
+
+   // HOME PAGE STYLES //
+   // Pages //
+   .pages {
+      &__container {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+      &__icons {
+         padding: 0;
+      }
+      &__main-content {
+         text-align: center;
+         padding: 0;
+         margin-top: 10px;
+      }
+   }
 }
