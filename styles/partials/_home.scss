@@ -38,6 +38,9 @@
 // WHO'S HARPER //
 .whos-harper {
    background: $accent;
+   &__h2 {
+      margin-top: 0;
+   }
    &__container {
       padding: 100px 0;
       width: 55%;

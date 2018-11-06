@@ -30,7 +30,8 @@
 @media (max-width: 1280px) {
    // FONT STYLES //
    body,
-   .body-text {
+   .body-text,
+   .nav-text {
       font-size: 18px;
       font-size: 1.8rem;
    }
@@ -54,13 +55,17 @@
       font-size: 70px;
       font-size: 7rem;
    }
+
+   // NAV STYLES //
+   .nav__link {
+      padding: 0 20px;
+   }
 }
 
 @media (max-width: 1150px) {
    // GENERAL STYLES //
    .wrapper {
       max-width: 960px;
-      border: 2px solid red;
    }
 
    // HOME PAGE STYLES //
@@ -71,11 +76,136 @@
       }
    }
 
+   // Pages //
+   .pages {
+      padding-bottom: 20px;
+   }
+
    // Blog //
    .home-blog {
-      padding: 25px 0;
-      &__post--row-reverse {
-         margin-top: 0px;
+      padding: 150px 0;
+   }
+
+   // Harper's Journey //
+   .harpers-journey {
+      padding-top: 100px;
+   }
+
+
+   // BLOG PAGE STYLES // 
+   .blog--padding {
+      padding: 25px;
+   }
+   .blog__main--feature {
+      padding: 25px 25px 75px 25px;
+   }
+
+   // CONTACT PAGE STYLES //
+   .contact__aside {
+      padding: 25px;
+   }
+}
+
+@media (max-width: 980px) {
+   // GENERAL STYLES //
+   .wrapper {
+      width: 90%;
+   }
+
+   // FONT STYLES //
+   body,
+   .body-text,
+   .nav-text {
+      font-size: 16px;
+      font-size: 1.6rem;
+   }
+
+   .h2-text {
+      font-size: 34px;
+      font-size: 3.4rem;
+   }
+
+   .h3-text {
+      font-size: 24px;
+      font-size: 2.4rem;
+   }
+
+   .h4-text {
+      font-size: 18px;
+      font-size: 1.8rem;
+   }
+
+   .hero-heading {
+      font-size: 60px;
+      font-size: 6rem;
+   }
+
+   // HOME PAGE STYLES //
+   // Header //
+   .header-home {
+      &__img-container {
+         max-width: 300px;
       }
+      &__h1--main {
+         @include heading-text(90);
+      }
+      &__h1--circle-text {
+         top: -10px;
+         right: -30px;
+         max-width: 120px;
+      }
+   }
+
+   // Who's Harper & Harper's Journey //
+   .whos-harper__container,
+   .harpers-journey {
+      padding: 70px 0;
+   }
+
+   .whos-harper__description,
+   .harpers-journey__content--description {
+      margin-bottom: 35px;
+   }
+
+   .whos-harper__button,
+   .harpers-journey__content--button {
+      width: 195px;
+   }
+
+   // Pages //
+   .pages {
+      padding: 70px 0 0 0;
+      &__main-content--description {
+         margin-bottom: 70px;
+      }
+   }
+
+   // Blog //
+   .home-blog {
+      padding: 130px 0;
+      &__post--button {
+         width: 160px;
+      }
+   }
+
+   // BLOG & CONTACT PAGE STYLES //
+   // Heading //
+   .hero-heading {
+      bottom: -40px;
+   }
+
+   // BLOG PAGE STYLES //
+   // Aside -- list //
+   .blog__aside--list-item {
+      margin-left: 0;
+      &::before {
+         padding-right: 15px;
+      }
+   }
+
+   // CONTACT PAGE STYLES //
+   // Aside //
+   .contact__social-flex {
+      width: 80%;
    }
 }
