@@ -1,11 +1,14 @@
 $("document").ready(function(){
    // ====== hamburger menu ====== //
    $('.hamburger').on('click', function(){
-      $('.nav-content').addClass('open');
-      $('.nav-content').removeClass('wrapper');
+      $('.nav').addClass('open');
    });
 
    $('.exit-responsive').on('click', function(){
-      $('.nav-content').removeClass('open');
+      $('.nav').removeClass('open');
+   });
+
+   $('.nav__link').on('click', function(){
+      $('.nav').removeClass('open');
    });
 });

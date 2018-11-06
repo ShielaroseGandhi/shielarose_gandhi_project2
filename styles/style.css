@@ -265,8 +265,18 @@ body {
   .input ::placeholder {
     opacity: 1; }
 
-.nav {
+.nav-wrapper {
   max-width: 100%;
+  padding: 20px 0;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #b9dde7; }
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,16 +285,8 @@ body {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  padding: 20px 20px 20px 0;
-  background: #b9dde7;
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000; }
-  .nav__list-item:nth-of-type(2), .nav__list-item:nth-of-type(3) {
+  align-items: center; }
+  .nav__list-item:nth-of-type(3), .nav__list-item:nth-of-type(4) {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1; }
@@ -293,6 +295,10 @@ body {
     line-height: 29px; }
     .nav__link:hover:not(.nav__link--logo) {
       color: #f6f6f6; }
+
+.hamburger,
+.exit-responsive {
+  display: none; }
 
 .footer {
   background: #171717;
@@ -912,6 +918,65 @@ body {
       display: none; } }
 
 @media (max-width: 600px) {
+  .nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0; }
+  .hamburger,
+  .exit-responsive {
+    display: block;
+    z-index: 10;
+    text-align: right;
+    width: 90%;
+    font-size: 30px;
+    font-size: 3rem;
+    margin: 0;
+    cursor: pointer; }
+  .exit-responsive {
+    margin-bottom: 25px; }
+  .nav {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #227284;
+    padding-top: 30px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .nav__list-item--logo {
+      display: none; }
+    .nav__list-item:nth-of-type(3), .nav__list-item:nth-of-type(4) {
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0; }
+    .nav__list-item {
+      padding: 30px 70px; }
+    .nav__link {
+      font-family: "Oswald", sans-serif;
+      font-size: 30px;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #171717;
+      padding: 30px 70x; }
+  .nav.open {
+    display: block;
+    z-index: 2000;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .pages__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
