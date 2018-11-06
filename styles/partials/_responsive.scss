@@ -479,6 +479,7 @@
       &__link {
          @include heading-text(30);
          padding: 30px 10x;
+         text-shadow: 0px 1px 0px black;
       }
    }
 
@@ -527,6 +528,11 @@
 
 @media (max-width:500px) {
    // HOME PAGE STYLES //
+   // Pages //
+   .pages__container {
+      width: 90%;
+   }
+
    // Blog section //
    .home-blog {
       .wrapper {
@@ -536,6 +542,9 @@
          width: 100%;
          &--img-top {
             box-shadow: -20px 20px 0 $brand-color-tertiary;
+         }
+         &--img-bottom {
+            box-shadow: 20px 20px 0 $brand-color-primary;
          }
       }
    }
@@ -563,3 +572,4 @@
       }
    }
 }
+
