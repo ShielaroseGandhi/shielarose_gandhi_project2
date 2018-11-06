@@ -286,6 +286,7 @@
    .header-home {
       background: url(../assets/home-image-1.jpg);
       background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
       height: 80vh;
       &::after {
@@ -300,13 +301,15 @@
       }
       &__wrapper--flex {
          flex-direction: column;
+         height: 100%;
       }
-      &__img-container--img {
+      &__img-container {
          display: none;
       }
       &__h1-container {
          height: 40vh;
          z-index: 1;
+         align-items: flex-end;
       }
    }
 

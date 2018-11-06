@@ -827,6 +827,7 @@ body {
   .header-home {
     background: url(../assets/home-image-1.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 80vh; }
     .header-home::after {
@@ -842,12 +843,16 @@ body {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; }
-    .header-home__img-container--img {
+      flex-direction: column;
+      height: 100%; }
+    .header-home__img-container {
       display: none; }
     .header-home__h1-container {
       height: 40vh;
-      z-index: 1; }
+      z-index: 1;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
   .whos-harper__container {
     margin: 0 auto;
     text-align: center;
