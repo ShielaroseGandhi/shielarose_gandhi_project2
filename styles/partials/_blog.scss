@@ -9,6 +9,7 @@
    .wrapper {
       display: flex;
       justify-content: space-between;
+      flex-direction: row-reverse;
    }
    &__bg {
       background: white;
@@ -48,8 +49,10 @@
          padding-right: 25px;
       }
    }
-   &__main {
+   &__container {
       width: 66%;
+   }
+   &__main {
       &--h2 {
          margin: 0;
       }
