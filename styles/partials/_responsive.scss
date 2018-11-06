@@ -520,8 +520,46 @@
          margin-bottom: 2%;
       }
       &--full {
-         margin: 0;
+         margin-top: 0;
       }
    }
-   
+}
+
+@media (max-width:500px) {
+   // HOME PAGE STYLES //
+   // Blog section //
+   .home-blog {
+      .wrapper {
+         width: 90%;
+      }
+      &__img-container {
+         width: 100%;
+         &--img-top {
+            box-shadow: -20px 20px 0 $brand-color-tertiary;
+         }
+      }
+   }
+
+   // Gallery //
+   .gallery {
+      padding: 0;
+      .wrapper {
+         width: 100%;
+      }
+      &__container {
+         width: 50%;
+         &:hover {
+            transform: none;
+         }
+      }
+   }
+
+   // BLOG PAGE //
+   // Adjust photo on about harper //
+   .blog {
+      &__aside--img-container {
+         padding-right: 25px;
+         width: 80%;
+      }
+   }
 }

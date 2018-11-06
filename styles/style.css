@@ -401,6 +401,7 @@ body {
     color: #171717; }
   .whos-harper__bgimage {
     background: url(../assets/home-image-2.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
     width: 100%;
     height: 40vh;
@@ -538,6 +539,7 @@ body {
 .blog-hero {
   background-image: url("../assets/blog-image-1.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 400px;
   display: -webkit-box;
@@ -622,6 +624,7 @@ body {
 .contact-hero {
   background-image: url("../assets/contact-image-1.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 400px;
   display: -webkit-box;
@@ -1062,4 +1065,26 @@ body {
     width: 100%;
     margin-bottom: 2%; }
   .input--full {
-    margin: 0; } }
+    margin-top: 0; } }
+
+@media (max-width: 500px) {
+  .home-blog .wrapper {
+    width: 90%; }
+  .home-blog__img-container {
+    width: 100%; }
+    .home-blog__img-container--img-top {
+      -webkit-box-shadow: -20px 20px 0 #68b0c1;
+      box-shadow: -20px 20px 0 #68b0c1; }
+  .gallery {
+    padding: 0; }
+    .gallery .wrapper {
+      width: 100%; }
+    .gallery__container {
+      width: 50%; }
+      .gallery__container:hover {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none; }
+  .blog__aside--img-container {
+    padding-right: 25px;
+    width: 80%; } }
