@@ -291,7 +291,7 @@
       height: 80vh;
       &::after {
          content: "";
-         background: lightgrey;
+         background: linear-gradient(0deg, $brand-color-tertiary 50%, $accent);
          opacity: 0.5;
          position: absolute;
          top: 80px;
@@ -310,6 +310,8 @@
          height: 40vh;
          z-index: 1;
          align-items: flex-end;
+         width: 100%;
+         justify-content: center;
       }
    }
 
@@ -399,6 +401,10 @@
       padding: 10px 0;
    }
 
+   .logo-responsive {
+      display: block; 
+   }
+
    .hamburger,
 	.exit-responsive {
 		display: block;
@@ -418,7 +424,6 @@
    .nav {
       display: none;
       flex-direction: column;
-      // justify-content: center;
       background: $brand-color-secondary;
       padding-top: 30px;
       width: 100vw;
@@ -438,7 +443,7 @@
       }
       &__link {
          @include heading-text(30);
-         padding: 30px 70x;
+         padding: 30px 10x;
       }
    }
 
@@ -456,13 +461,6 @@
 
 
    // HOME PAGE STYLES //
-   // Header //
-   // .header-home {
-   //    margin-top: 0;
-   //    &::after {
-   //       margin-top: 0;
-   //    }
-   // }
    // Pages //
    .pages {
       &__container {

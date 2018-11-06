@@ -1,6 +1,6 @@
 .nav-wrapper {
    max-width: 100%;
-   padding: 20px 0;
+   padding: 20px;
    width: 100%;
    height: 80px;
    position: fixed;
@@ -8,6 +8,14 @@
    left: 0;
    z-index: 1000;
    background: $brand-color-primary;
+}
+
+.responsive-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 85%;
+   margin: 0 auto;
 }
 
 .nav {
@@ -29,5 +37,9 @@
 
 .hamburger,
 .exit-responsive {
+   display: none;
+}
+
+.logo-responsive {
    display: none;
 }
