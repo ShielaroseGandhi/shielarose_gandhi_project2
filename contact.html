@@ -40,8 +40,22 @@
    <!-- HEADER END -->
 
    <!-- CONTENT STARTS -->
-   <main class="contact">
+   <div class="contact">
       <div class="wrapper">
+         <main class="contact__form-container">
+            <form action="" class="contact__form form">
+               <label for="name" class="visuallyhidden">Enter Name</label>
+               <input type="text" id="name" placeholder="Name" class="input input--half input contact__input contact__input--name body-text">
+               
+               <label for="email" class="visuallyhidden">Enter Email Address</label>
+               <input type="email" id="email" placeholder="Email" class="input input--half contact__input contact__input--email body-text">
+               
+               <textarea name="message" id="message" class="input input--full contact__input contact__input--message body-text" cols="30" rows="10" wrap="hard" placeholder="Message"></textarea>
+               
+               <label for="submit" class="visuallyhidden"></label>
+               <input type="submit" id="submit" class="button contact__button" value="Submit">
+            </form>
+         </main>
          <aside class="contact__aside">
             <div class="contact__social-flex">
                <a href="" class="contact__social-icons--link">
@@ -63,20 +77,8 @@
             <p class="contact__address body-text">Toronto, ON</p>
             <p class="contact__address body-text">M5V2D5</p>
          </aside>
-         <form action="" class="contact__form form">
-            <label for="name" class="visuallyhidden">Enter Name</label>
-            <input type="text" id="name" placeholder="Name" class="input input--half input contact__input contact__input--name body-text">
-            
-            <label for="email" class="visuallyhidden">Enter Email Address</label>
-            <input type="email" id="email" placeholder="Email" class="input input--half contact__input contact__input--email body-text">
-            
-            <textarea name="message" id="message" class="input input--full contact__input contact__input--message body-text" cols="30" rows="10" wrap="hard" placeholder="Message"></textarea>
-            
-            <label for="submit" class="visuallyhidden"></label>
-            <input type="submit" id="submit" class="button contact__button" value="Submit">
-         </form>
       </div>
-   </main>
+   </div>
 
    <!-- FOOTER START -->
    <footer class="footer">

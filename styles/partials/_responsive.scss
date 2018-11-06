@@ -152,7 +152,7 @@
       &__h1--circle-text {
          top: -10px;
          right: -30px;
-         max-width: 120px;
+         max-width: 110px;
       }
    }
 
@@ -208,4 +208,74 @@
    .contact__social-flex {
       width: 80%;
    }
+}
+
+@media (max-width: 860px) {
+   // HOME PAGE STYLES //
+   // Header //
+   .header-home {
+      &__img-container {
+         max-width: 275px;
+      }
+   }
+
+   // BLOG AND CONTACT PAGES //
+   .blog .wrapper,
+   .contact .wrapper {
+      display: block;
+   }
+
+   // BLOG STYLES //
+   .blog {
+      &__container {
+         width: 100%;
+      }
+      &__aside {
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         padding: 0;
+         margin-top: 25px;
+         &__about {
+            display: flex;
+            align-items: center;
+            width: 59%;
+            margin: 0;
+         }
+         &--img-container {
+            padding-right: 25px;
+         }
+         &__about--content {
+            
+         }
+         &__recent-posts {
+            width: 39%;
+         }
+      }
+   }
+
+   // CONTACT STYLES //
+   .contact {
+      &__form-container {
+         width: 100%;
+      }
+      &__aside {
+         width: 100%;
+         margin-top: 25px;
+         text-align: center;
+      }
+      &__social-flex {
+         width: 60%;
+         padding-top: 0;
+         margin: 0 auto;
+         justify-content: space-around;
+      }
+      &__social-icons--link {
+         padding: 0 25px;
+         &:hover .contact__social-icons {
+            color: $brand-color-primary;
+         }
+      }
+   }
+
 }

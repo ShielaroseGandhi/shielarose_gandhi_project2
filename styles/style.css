@@ -545,7 +545,7 @@ body {
   .blog__bg {
     background: white; }
   .blog--padding {
-    padding: 40px; }
+    padding: 40px 40px 20px 40px; }
   .blog__aside {
     width: 30%; }
     .blog__aside--h4 {
@@ -562,7 +562,8 @@ body {
     .blog__aside--link:hover {
       color: #68b0c1; }
     .blog__aside--img {
-      width: 100%; }
+      width: 100%;
+      display: block; }
     .blog__aside--list-item {
       margin-left: 15px; }
     .blog__aside--list-item:before {
@@ -620,13 +621,17 @@ body {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
   .contact__aside {
     background: white;
     padding: 35px;
     width: 29%;
     height: 100%; }
-  .contact__form {
+  .contact__form-container {
     width: 68%; }
   .contact__social-flex {
     display: -webkit-box;
@@ -742,7 +747,7 @@ body {
   .header-home__h1--circle-text {
     top: -10px;
     right: -30px;
-    max-width: 120px; }
+    max-width: 110px; }
   .whos-harper__container,
   .harpers-journey {
     padding: 70px 0; }
@@ -768,3 +773,51 @@ body {
       padding-right: 15px; }
   .contact__social-flex {
     width: 80%; } }
+
+@media (max-width: 860px) {
+  .header-home__img-container {
+    max-width: 275px; }
+  .blog .wrapper,
+  .contact .wrapper {
+    display: block; }
+  .blog__container {
+    width: 100%; }
+  .blog__aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 25px; }
+    .blog__aside__about {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 59%;
+      margin: 0; }
+    .blog__aside--img-container {
+      padding-right: 25px; }
+    .blog__aside__recent-posts {
+      width: 39%; }
+  .contact__form-container {
+    width: 100%; }
+  .contact__aside {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center; }
+  .contact__social-flex {
+    width: 60%;
+    padding-top: 0;
+    margin: 0 auto;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .contact__social-icons--link {
+    padding: 0 25px; }
+    .contact__social-icons--link:hover .contact__social-icons {
+      color: #b9dde7; } }
