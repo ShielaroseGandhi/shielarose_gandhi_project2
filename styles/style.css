@@ -856,7 +856,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh; }
+    height: 95vh; }
     .header-home::after {
       content: "";
       background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #68b0c1), to(#f6f6f6));
@@ -867,7 +867,7 @@ body {
       position: absolute;
       top: 80px;
       left: 0;
-      height: 80vh;
+      height: 95vh;
       width: 100%; }
     .header-home__wrapper--flex {
       -webkit-box-orient: vertical;
