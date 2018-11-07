@@ -1109,7 +1109,9 @@ body {
   .whos-harper__container {
     width: 90%; }
   .hero-heading {
-    text-align: center; }
+    text-align: center;
+    font-size: 50px;
+    font-size: 5rem; }
   .blog--padding {
     padding: 25px 5px; }
   .blog__aside--img-container {
